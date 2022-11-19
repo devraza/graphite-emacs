@@ -87,5 +87,12 @@
   (flycheck-warning (:underline (:style 'wave :color graphite-magenta)))
   (flycheck-info (:underline (:style 'wave :color graphite-yellow)))
   (flycheck-errors (:underline (:style 'wave :color graphite-red)))))
-    
+
+;; Load theme directory
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
+
 (provide-theme 'graphite)
