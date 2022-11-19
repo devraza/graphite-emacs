@@ -54,7 +54,7 @@
   (font-lock-constant-face (:foreground graphite-yellow))
   (font-lock-string-face (:foreground graphite-green))
   (font-lock-builtin-face (:foreground graphite-red))
-  (error (:foreground graphite-red))
+  (error (:foreground graphite-yellow))
   (font-lock-type-face (:foreground graphite-red))
   (font-lock-comment-face (:foreground comment))
 
