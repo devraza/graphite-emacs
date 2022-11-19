@@ -1,5 +1,5 @@
 ;;; graphite-theme.el --- A sparkling, shimmering theme for Emacs
-;;; Commentary
+;;; Commentary:
 ;;
 ;; This theme does it's best to make Emacs look beautiful,
 ;; as with every other theme you will ever see.
