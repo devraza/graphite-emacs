@@ -24,6 +24,7 @@
   (fg-dark "#bfbfff")
   (fg-dark-alt "#6f6fbf")
   (bg "#111111")
+  (bg-dark "#090909")
   (bg-light "#2F2F3F")
   (selection "#1a1a1a")
   (highlight "#6b6b97")
@@ -36,10 +37,9 @@
   (graphite-yellow "#f9ef61")
   (graphite-cyan "#50fcce"))
 
- ;; Specifications for Emacs faces.
-
  ;; General
  ((default (:foreground fg :background bg))
+  (link (:foreground graphite-cyan :underline t))
   (region (:background selection))
   (highlight (:background bg-light))
   (help-key-binding (:background bg :foreground graphite-magenta :slant 'italic))
@@ -136,6 +136,33 @@
   (rustic-compilation-warning (:foreground graphite-yellow))
   (rustic-compilation-column (:foreground fg-dark))
   (rustic-compilation-line (:foreground fg-dark))
+
+  ;; Git
+  (git-commit-summary (:foreground graphite-green))
+  (git-commit-overlong-summary (:foreground graphite-red))
+  
+  ;; Magit
+  (magit-header-line (:foreground graphite-cyan :weight 'bold :background bg))
+  (magit-diff-file-heading-highlight (:foreground graphite-yellow :weight 'bold))
+
+  (magit-section-highlight (:foreground graphite-blue :weight 'bold))
+  (magit-section-heading (:foreground graphite-magenta))
+  (magit-head (:foreground graphite-blue))
+  (magit-hash (:foreground fg-dark-alt))
+  (magit-header-line (:foreground graphite-yellow))
+  (magit-branch-current (:foreground graphite-blue))
+  (magit-branch-local (:foreground graphite-blue))
+  (magit-branch-remote (:foreground graphite-cyan))
+
+  (magit-diff-added (:foreground graphite-green :background bg :slant 'italic))
+  (magit-diff-context (:foreground fg-dark :background bg :slant 'italic))
+  (magit-diff-removed (:foreground graphite-red :background bg :slant 'italic))
+  
+  (magit-diff-hunk-heading-highlight (:background bg-dark :foreground graphite-magenta :weight 'bold))
+  (magit-diff-hunk-heading (:background bg-dark :foreground fg-dark))
+  (magit-diff-added-highlight (:background bg-dark :foreground graphite-green :slant 'italic))
+  (magit-diff-context-highlight (:background bg-dark :foreground fg :slant 'italic))
+  (magit-diff-removed-highlight (:background bg-dark :foreground graphite-red :slant 'italic))
   
   ;; Flycheck
   (flycheck-inline-info (:foreground graphite-yellow))
