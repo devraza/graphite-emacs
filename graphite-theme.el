@@ -8,7 +8,7 @@
 ;;
 ;; Try it out!
 ;;
-;; Code:
+;;; Code:
 
 (require 'autothemer)
 
@@ -26,8 +26,8 @@
   (bg "#111111")
   (bg-light "#2F2F3F")
   (selection "#1a1a1a")
+  (highlight "#6b6b97")
   (comment "#4f4f7f")
-  (line-number "#6b6b97")
   (graphite-red "#fc5078")
   (graphite-green "#69f961")
   (graphite-blue "#64c7fc")
@@ -41,15 +41,30 @@
  ;; General
  ((default (:foreground fg :background bg))
   (region (:background selection))
+  (highlight (:background bg-light))
   (help-key-binding (:background bg :foreground graphite-magenta :slant 'italic))
   (font-lock-keyword-face (:foreground graphite-magenta))
-  (line-number (:foreground line-number))
+  (show-paren-match (:foreground graphite-red :weight 'bold))
+  (line-number (:foreground highlight))
   (line-number-current-line (:foreground fg))
+  (font-lock-variable-name-face (:foreground graphite-yellow))
+  (font-lock-warning-face (:foreground graphite-red))
+  (completions-common-part (:foreground graphite-green))
+  (completions-first-difference (:foreground fg-dark))
   (font-lock-constant-face (:foreground graphite-yellow))
   (font-lock-string-face (:foreground graphite-green))
   (font-lock-builtin-face (:foreground graphite-red))
+  (error (:foreground graphite-red))
   (font-lock-type-face (:foreground graphite-red))
   (font-lock-comment-face (:foreground comment))
+
+  (isearch (:foreground graphite-green :background bg))
+  (isearch-fail (:foreground graphite-red))
+
+  (secondary-selection (:foreground highlight))
+
+  ;; Window
+  (window-divider (:foreground selection))
 
   ;; Org mode
   (org-headline-done (:foreground graphite-yellow))
@@ -62,6 +77,14 @@
   (org-table (:foreground graphite-magenta))
   (org-special-keyword (:foreground graphite-yellow))
   (org-document-info-keyword (:foreground fg-dark))
+  (org-level-1 (:foreground graphite-blue))
+  (org-level-2 (:foreground graphite-blue))
+  (org-level-3 (:foreground graphite-magenta))
+  (org-level-4 (:foreground fg))
+  (org-level-5 (:foreground fg))
+  (org-level-6 (:foreground fg))
+  (org-level-7 (:foreground fg))
+  (org-level-8 (:foreground fg))
   (org-document-info (:foreground graphite-cyan))
 
   ;; Markdown
@@ -80,7 +103,10 @@
   (orderless-match-face-2 (:foreground graphite-blue))
   (orderless-match-face-3 (:foreground graphite-cyan))
 
-  ;; Diredfl
+  ;; which-key
+  (which-key-command-description-face (:foreground fg))
+
+  ;; Dired
   (diredfl-read-priv (:foreground graphite-yellow))
   (diredfl-dir-priv (:foreground graphite-blue))
   (diredfl-no-priv (:foreground fg-dark))
@@ -90,15 +116,16 @@
   (diredfl-file-name (:foreground fg-dark))
   (diredfl-file-suffix (:foreground graphite-yellow))
   (diredfl-date-time (:foreground graphite-blue))
-  
+
   ;; Flycheck
   (flycheck-inline-info (:foreground graphite-yellow))
   (flycheck-inline-warning (:foreground graphite-magenta))
+  (flycheck-inline-error (:foreground graphite-red))
 
   (flycheck-fringe-warning (:foreground graphite-magenta))
   (flycheck-fringe-error (:foreground graphite-red))
   (flycheck-fringe-info (:foreground graphite-yellow))
-  
+
   (flycheck-warning (:underline (:style 'wave :color graphite-magenta)))
   (flycheck-info (:underline (:style 'wave :color graphite-yellow)))
   (flycheck-errors (:underline (:style 'wave :color graphite-red)))))
