@@ -49,7 +49,7 @@
   (line-number-current-line (:foreground fg :background bg))
   (font-lock-variable-name-face (:foreground graphite-yellow))
   (font-lock-warning-face (:foreground graphite-yellow))
-  (completions-common-part (:foreground graphite-green))
+  (completions-common-part (:foreground graphite-blue))
   (completions-first-difference (:foreground fg))
   (font-lock-constant-face (:foreground graphite-yellow))
   (font-lock-string-face (:foreground graphite-green))
