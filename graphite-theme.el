@@ -50,7 +50,7 @@
   (font-lock-variable-name-face (:foreground graphite-yellow))
   (font-lock-warning-face (:foreground graphite-red))
   (completions-common-part (:foreground graphite-green))
-  (completions-first-difference (:foreground fg-dark))
+  (completions-first-difference (:foreground fg))
   (font-lock-constant-face (:foreground graphite-yellow))
   (font-lock-string-face (:foreground graphite-green))
   (font-lock-builtin-face (:foreground graphite-red))
@@ -74,18 +74,22 @@
   (org-link (:foreground graphite-cyan :underline t :weight 'bold))
   (org-drawer (:foreground graphite-red))
   (org-date (:foreground graphite-magenta))
-  (org-table (:foreground graphite-magenta))
+  (org-table (:foreground graphite-cyan))
   (org-special-keyword (:foreground graphite-yellow))
   (org-document-info-keyword (:foreground fg-dark))
-  (org-level-1 (:foreground graphite-blue))
-  (org-level-2 (:foreground graphite-blue))
-  (org-level-3 (:foreground graphite-magenta))
-  (org-level-4 (:foreground fg))
-  (org-level-5 (:foreground fg))
-  (org-level-6 (:foreground fg))
-  (org-level-7 (:foreground fg))
-  (org-level-8 (:foreground fg))
+  (org-list-dt (:foreground graphite-red))
+  (org-level-1 (:slant 'italic))
+  (org-level-2 (:slant 'italic))
+  (org-level-3 (:slant 'italic))
+  (org-level-4 (:slant 'italic))
+  (org-level-5 (:slant 'italic))
+  (org-level-6 (:slant 'italic))
+  (org-level-7 (:slant 'italic))
+  (org-level-8 (:slant 'italic))
   (org-document-info (:foreground graphite-cyan))
+
+  ;; Org Superstar
+  (org-superstar-header-bullet (:foreground fg-dark :slant 'normal))
 
   ;; Markdown
   (markdown-code-face (:inherit 'default :foreground graphite-yellow))
@@ -117,6 +121,12 @@
   (diredfl-file-suffix (:foreground graphite-yellow))
   (diredfl-date-time (:foreground graphite-blue))
 
+  ;; evil
+  (evil-ex-info (:foreground graphite-red))
+  (evil-ex-lazy-highlight (:background highlight))
+  (evil-ex-substitute-matches (:strike-through t :weight 'bold :foreground graphite-yellow))
+  (evil-ex-substitute-replacement (:foreground graphite-red :weight 'bold))
+  
   ;; Flycheck
   (flycheck-inline-info (:foreground graphite-yellow))
   (flycheck-inline-warning (:foreground graphite-magenta))
