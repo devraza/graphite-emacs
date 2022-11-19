@@ -71,9 +71,9 @@
 
   ;; Org mode
   (org-headline-done (:foreground graphite-yellow))
-  (org-todo (:foreground graphite-magenta))
+  (org-todo (:foreground graphite-magenta :slant 'normal))
   (org-hide (:foreground bg))
-  (org-done (:foreground graphite-green))
+  (org-done (:foreground graphite-green :slant 'normal))
   (org-meta-line (:foreground fg-dark-alt))
   (org-link (:foreground graphite-cyan :underline t :weight 'bold))
   (org-drawer (:foreground graphite-red))
