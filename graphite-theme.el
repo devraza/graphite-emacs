@@ -57,11 +57,14 @@
   (error (:foreground graphite-red))
   (font-lock-type-face (:foreground graphite-red))
   (font-lock-comment-face (:foreground comment))
+  (secondary-selection (:foreground highlight))
 
+  ;; Isearch
   (isearch (:foreground graphite-green :background bg))
   (isearch-fail (:foreground graphite-red))
 
-  (secondary-selection (:foreground highlight))
+  ;; Modeline
+  (mode-line (:background bg-light))
 
   ;; Window
   (window-divider (:foreground selection))
