@@ -45,8 +45,8 @@
   (help-key-binding (:background bg :foreground graphite-magenta :slant 'italic))
   (font-lock-keyword-face (:foreground graphite-magenta))
   (show-paren-match (:foreground graphite-red :weight 'bold))
-  (line-number (:foreground highlight))
-  (line-number-current-line (:foreground fg))
+  (line-number (:foreground highlight :background bg))
+  (line-number-current-line (:foreground fg :background bg))
   (font-lock-variable-name-face (:foreground graphite-yellow))
   (font-lock-warning-face (:foreground graphite-red))
   (completions-common-part (:foreground graphite-green))
@@ -112,6 +112,7 @@
 
   ;; Dired
   (diredfl-read-priv (:foreground graphite-yellow))
+  (diredfl-dir-heading (:foreground graphite-magenta :weight 'bold))
   (diredfl-dir-priv (:foreground graphite-blue))
   (diredfl-no-priv (:foreground fg-dark))
   (diredfl-write-priv (:foreground graphite-red))
@@ -121,11 +122,20 @@
   (diredfl-file-suffix (:foreground graphite-yellow))
   (diredfl-date-time (:foreground graphite-blue))
 
-  ;; evil
+  ;; Evil
   (evil-ex-info (:foreground graphite-red))
   (evil-ex-lazy-highlight (:background highlight))
   (evil-ex-substitute-matches (:strike-through t :weight 'bold :foreground graphite-yellow))
   (evil-ex-substitute-replacement (:foreground graphite-red :weight 'bold))
+
+  ;; Eglot
+  (eglot-highlight-symbol-face (:foreground graphite-blue))
+
+  ;; Rustic
+  (rustic-compilation-error (:foreground graphite-red))
+  (rustic-compilation-warning (:foreground graphite-yellow))
+  (rustic-compilation-column (:foreground fg-dark))
+  (rustic-compilation-line (:foreground fg-dark))
   
   ;; Flycheck
   (flycheck-inline-info (:foreground graphite-yellow))
@@ -138,7 +148,7 @@
 
   (flycheck-warning (:underline (:style 'wave :color graphite-magenta)))
   (flycheck-info (:underline (:style 'wave :color graphite-yellow)))
-  (flycheck-errors (:underline (:style 'wave :color graphite-red)))))
+  (flycheck-error (:underline (:style 'wave :color graphite-red)))))
 
 ;;;###autoload
 (and load-file-name
