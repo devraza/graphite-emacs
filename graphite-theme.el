@@ -88,7 +88,7 @@
   (flycheck-info (:underline (:style 'wave :color graphite-yellow)))
   (flycheck-errors (:underline (:style 'wave :color graphite-red)))))
 
-;; Load theme directory
+;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
      (add-to-list 'custom-theme-load-path
