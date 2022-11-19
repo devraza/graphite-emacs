@@ -1,4 +1,19 @@
+;;; graphite-theme.el --- A sparkling, shimmering theme for Emacs
+;;; Commentary
+;;
+;; This theme does it's best to make Emacs look beautiful,
+;; as with every other theme you will ever see.
+;; One way it does this by making colours stick out,  by maintaining
+;; a stark contrast between foreground and background.
+;;
+;; Try it out!
+;;
+;; Code:
+
 (require 'autothemer)
+
+(unless (>= emacs-major-version 26)
+  (error "Requires Emacs 26 or later"))
 
 (autothemer-deftheme
  graphite "A sparkling, shimmering theme for Emacs"
@@ -96,3 +111,5 @@
                    (file-name-directory load-file-name))))
 
 (provide-theme 'graphite)
+
+;;; graphite-theme.el ends here
