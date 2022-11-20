@@ -26,7 +26,7 @@
   (bg "#111111")
   (bg-dark "#090909")
   (bg-light "#2F2F3F")
-  (selection "#1a1a1a")
+  (selection "#1f1f1f")
   (highlight "#6b6b97")
   (comment "#4f4f7f")
   (graphite-red "#fc5078")
