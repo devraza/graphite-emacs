@@ -71,12 +71,13 @@
   (window-divider (:foreground selection))
 
   ;; Org mode
-  (org-headline-done (:foreground graphite-yellow))
+  (org-headline-done (:foreground fg))
+  (org-checkbox (:foreground graphite-magenta))
   (org-todo (:foreground graphite-magenta :slant 'normal))
   (org-hide (:foreground bg))
   (org-done (:foreground graphite-green :slant 'normal))
   (org-meta-line (:foreground fg-dark-alt))
-  (org-link (:foreground graphite-cyan :underline t :weight 'bold))
+  (org-link (:foreground graphite-green :underline t :weight 'bold))
   (org-drawer (:foreground graphite-red))
   (org-date (:foreground graphite-magenta))
   (org-table (:foreground graphite-cyan))
