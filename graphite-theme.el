@@ -74,7 +74,6 @@
   (org-headline-done (:foreground fg))
   (org-checkbox (:foreground graphite-magenta))
   (org-todo (:foreground graphite-magenta :slant 'normal))
-  (org-hide (:foreground bg))
   (org-done (:foreground graphite-green :slant 'normal))
   (org-meta-line (:foreground fg-dark-alt))
   (org-link (:foreground graphite-green :underline t :weight 'bold))
@@ -95,6 +94,7 @@
   (org-document-info (:foreground graphite-cyan))
 
   ;; Org Superstar
+  (org-superstar-item (:foreground graphite-red))
   (org-superstar-header-bullet (:foreground fg-dark :slant 'normal))
 
   ;; Markdown
@@ -124,7 +124,7 @@
   (diredfl-write-priv (:foreground graphite-red))
   (diredfl-exec-priv (:foreground graphite-green))
   (diredfl-dir-name (:foreground graphite-magenta))
-  (diredfl-file-name (:foreground fg-dark))
+  (diredfl-file-name (:foreground fg))
   (diredfl-file-suffix (:foreground graphite-yellow))
   (diredfl-date-time (:foreground graphite-blue))
 
