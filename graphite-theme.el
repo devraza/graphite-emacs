@@ -73,6 +73,7 @@
   ;; Org mode
   (org-code (:foreground fg-dark))
   (org-block (:foreground fg-dark))
+  (org-ellipsis (:foreground fg-dark-alt :weight 'bold))
   (org-headline-done (:foreground fg))
   (org-checkbox (:foreground graphite-magenta))
   (org-todo (:foreground graphite-magenta :slant 'normal))
