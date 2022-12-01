@@ -61,8 +61,8 @@
   (secondary-selection (:foreground highlight))
 
   ;; Isearch
-  (isearch (:foreground graphite-green :background selection :weight 'bold))
-  (isearch-fail (:foreground graphite-red :background selection :weight 'bold))
+  (isearch (:foreground graphite-green :background bg-light :weight 'bold :underline t))
+  (isearch-fail (:foreground graphite-red :weight 'bold))
 
   ;; Modeline
   (mode-line (:background bg-light))
